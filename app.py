@@ -10,6 +10,19 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:bFJBORbZWNC
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
+# Inicializar la base de datos
 db = SQLAlchemy(app)
 
 # URL del backend central
