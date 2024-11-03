@@ -80,6 +80,7 @@ def recibir_datos():
             presion=presion,
             combustible=combustible
         )
+        # anadir el sensor data a la base de datos
         db.session.add(sensor_data)
 
     # Guardar los cambios en la base de datos
