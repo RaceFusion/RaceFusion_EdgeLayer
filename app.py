@@ -95,6 +95,7 @@ def recibir_datos():
     }
     
     try:
+        # verificar si la respuesta del API es correcta
         response = requests.post(CENTRAL_BACKEND_URL, json=payload, timeout=5)
         if response.status_code == 200:
             print("Datos enviados al backend central con éxito.")
