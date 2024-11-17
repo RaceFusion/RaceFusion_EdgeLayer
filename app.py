@@ -10,19 +10,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:bFJBORbZWNC
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
-# Inicializar la base de datos
 db = SQLAlchemy(app)
 
 # URL del backend central
@@ -80,7 +67,6 @@ def recibir_datos():
             presion=presion,
             combustible=combustible
         )
-        # anadir el sensor data a la base de datos
         db.session.add(sensor_data)
 
     # Guardar los cambios en la base de datos
@@ -96,7 +82,6 @@ def recibir_datos():
     }
     
     try:
-        # verificar si la respuesta del API es correcta
         response = requests.post(CENTRAL_BACKEND_URL, json=payload, timeout=5)
         if response.status_code == 200:
             print("Datos enviados al backend central con éxito.")
